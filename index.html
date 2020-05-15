@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Bellota+Text&family=Jaldi&family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+    crossorigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $("#btn").click(function() {
+            $("#test").load("data.txt");
+        });
+    });
+
+</script>
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -29,7 +46,7 @@
             <br></br>
             <p>Monday-Thursday: 10:00 a.m - 11:00 p.m</p>
             <p>Friday-Sunday: 10:00 a.m - 1:00 p.m</p>
-            <p>We love to have everone come join the fun! Check our schudual for children approved shows times. </p>
+            <p>We love to have everyone come join the fun! Check our schudual for children approved shows times. </p>
         </div>
 
 
@@ -37,7 +54,7 @@
         <p id="header">Our Schedual</p>
         <p class="chunk">We host family friendly shows Monday-Sundays. All shows from 8:00 p.m - 5:00 a.m are family friendly. Any show after these times are for audiences 18+.</p>
         <p class="chunk"> What to bring</p>
-        <p> As our evening events are 18+ please bring ID <form action=""></form> proof of age.</p>
+        <p> As our evening events are 18+ please bring ID <form action=""></form>for proof of age.</p>
         <p> Some shows may be held outside so bring sunscreen!</p>
         <p class="chunk"> Call our business for any questions! (210) 987-6543</p>
 
@@ -47,16 +64,21 @@
 
     <div id="visit"> <p onmouseover="colorChange(this)" onmouseout="colorChange(this)" > Book A Gig! </p></div>
     <div id="content">
-        <p> *Find the green button below and Double Click to reveal a 
-            coupon code!</p>
+        <p> Double click the green button below to use a 20% off coupon on your entire order when you purchase your tickets.</p>
         <h3> 20% off coupon </h3>
     </div>
     
     <aside>
         
-        <p> When you call to place an order, 
-            just make sure to say "Mmmm Bakery!"</p>
+        <p> show us you follow our instagram! @SALocalTalent</p>
       </aside>
+
+      <div class="ajax">
+      <div id="test">
+          <p>Click to see our next shows for the day!</p>
+      </div>
+      <button id="btn">Click here</button>
+      </div>
 
       <div class="imgBox"><img src="images/img1.jpg"</div>
     <ul class="thumb">
