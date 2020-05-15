@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <h1> Local Talent </h1>
+        <div class="navbar">
+            <ul id="demoparent" class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">office</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Ticket Prices</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="Content">
+           <p>Join us downtown for fun local entertainment. Our location showcases local talents in San Antonio. Enjoy
+            bands, comedians, dance cover groups and artist while having a nice drink and dessert. Our doors are open to everyone
+            of all ages ( Check our schedualed times for children).
+           </p> 
+            <p id="business">Business Hours:</p>
+            <br></br>
+            <p>Monday-Thursday: 10:00 a.m - 11:00 p.m</p>
+            <p>Friday-Sunday: 10:00 a.m - 1:00 p.m</p>
+            <p>We love to have everone come join the fun! Check our schudual for children approved shows times. </p>
+        </div>
+
+
+    <div id="content"> 
+        <p id="header">Our Schedual</p>
+        <p class="chunk">We host family friendly shows Monday-Sundays. All shows from 8:00 p.m - 5:00 a.m are family friendly. Any show after these times are for audiences 18+.</p>
+        <p class="chunk"> What to bring</p>
+        <p> As our evening events are 18+ please bring ID <form action=""></form> proof of age.</p>
+        <p> Some shows may be held outside so bring sunscreen!</p>
+        <p class="chunk"> Call our business for any questions! (210) 987-6543</p>
+
+    </div>
+
+    <button id="show-more"> View More </button>
+
+    <div id="visit"> <p onmouseover="colorChange(this)" onmouseout="colorChange(this)" > Book A Gig! </p></div>
+    <div id="content">
+        <p> *Find the green button below and Double Click to reveal a 
+            coupon code!</p>
+        <h3> 20% off coupon </h3>
+    </div>
+    
+    <aside>
+        
+        <p> When you call to place an order, 
+            just make sure to say "Mmmm Bakery!"</p>
+      </aside>
+
+      <div class="imgBox"><img src="images/img1.jpg"</div>
+    <ul class="thumb">
+        <li><a href="images/img1.jpg" target="imgBox"><img src="images/img1.jpg"></a></li>
+        <li><a href="images/img2.jpg" target="imgBox"><img src="images/img2.jpg"></a></li>
+        <li><a href="images/img3.jpg" target="imgBox"><img src="images/img3.jpg"></a></li>
+        <li><a href="images/img4.jpg" target="imgBox"><img src="images/img4.jpg"></a></li>
+        <li><a href="images/img5.jpg" target="imgBox"><img src="images/img5.jpg"></a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.thumb a').click(function(e){
+                e.preventDefault();
+                $('.imgBox img').attr("src", $(this).attr("href"));
+            })
+            })
+        
+    </script>
+
+    
+</body>
+</html>
